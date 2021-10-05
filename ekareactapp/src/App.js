@@ -1,17 +1,15 @@
 import Title from "./components/title";
 import FilterBy from "./components/filterBy";
 import AddSong from "./components/addSong";
-import Song from "./components/song";
+import SongList from "./components/songList";
 
 function App() {
   return (
     <div>
-      <Title />
+      <Title appname="SongApp"/>
       <FilterBy />
       <AddSong />
-      <Song />
-      <Song />
-      <Song />
+      <SongList />
     </div>
   );
 }

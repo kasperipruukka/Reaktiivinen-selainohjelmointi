@@ -2,7 +2,7 @@ const FilterBy = () => {
     return (
         <div>
             <div>
-                <input type="radio" name="filter" id="song" value="song" checked/>
+                <input type="radio" name="filter" id="song" value="song" defaultChecked/>
                 <label htmlFor="song">Song</label>
             </div>
             

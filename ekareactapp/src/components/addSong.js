@@ -13,7 +13,7 @@ const AddSong = () => {
             <input type="text" id="ReleaseYear" />
 
             <div>
-                <button role="button">Save</button>
+                <button>Save</button>
             </div>
         </div>
     );

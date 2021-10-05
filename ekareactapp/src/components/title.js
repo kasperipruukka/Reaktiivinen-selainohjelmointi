@@ -1,7 +1,7 @@
-const Title = () => {
+const Title = ({appname}) => {
     return (
         <div>
-            <h1>Song app</h1>
+            <h1>{appname}</h1>
         </div>
     );
 }

@@ -1,11 +1,11 @@
-const Song = () => {
+const Song = ({song, artist, year}) => {
     return (
         <div>
             <div>
-                <h3>Battery</h3>
-                <p>Metallica, 1986</p>
-                <button>Edit</button>
-                <button>Delete</button>
+                <h3>{song}</h3>
+                <p>{artist}, {year}</p>
+                <input type="button" value="edit" />
+                <input type="button" value="delete" />
             </div>
         </div>
     );
