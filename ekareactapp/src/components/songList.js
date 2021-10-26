@@ -1,11 +1,22 @@
+import { useState } from "react";
 import Song from "./song";
 
 const SongList = () => {
+    const [songs] = useState([
+        { song: 'biisi1', artist: 'esittäjä 1', year: '2001' },
+        { song: 'biisi2', artist: 'esittäjä 2', year: '2002' },
+        { song: 'biisi3', artist: 'esittäjä 3', year: '2003' }
+       ]);       
+
     return(
         <div>
-            <Song song="Song1" artist="Artist1" year="1986"/>
-            <Song song="Song2" artist="Artist2" year="2000"/>
-            <Song song="Song3" artist="Artist3" year="2010"/>
+            {
+                songs.map(({song, artist, year}, index) => {
+                    return (
+                        <Song key={song + '-' + index} song={song} artist={artist} year={year} />
+                    )
+                })
+            }
         </div>
     );
 }
