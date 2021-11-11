@@ -1,23 +1,23 @@
 const FilterBy = () => {
     return (
-        <div>
-            <div>
+        <div className="p-2 border-gray-200 border-b-2 border-r-2">
+            <div className="flex items-center justify-center">
                 <input type="radio" name="filter" id="song" value="song" defaultChecked/>
-                <label htmlFor="song">Song</label>
+                <label className="w-10" htmlFor="song">Song</label>
             </div>
             
-            <div>
+            <div className="flex items-center justify-center">
                 <input type="radio" name="filter" id="artist" value="artist"/>
-                <label htmlFor="artist">Artist</label>
+                <label className="w-10" htmlFor="artist">Artist</label>
             </div>
             
-            <div>
+            <div className="flex items-center justify-center">
                 <input type="radio" name="filter" id="year" value="year"/>
-                <label htmlFor="year">Year</label>
+                <label className="w-10" htmlFor="year">Year</label>
             </div>
 
             <div>
-                <input type="text" />
+                <input placeholder="Search" type="text" />
             </div>
         </div>
     );

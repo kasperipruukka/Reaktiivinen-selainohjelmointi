@@ -3,13 +3,19 @@ import Song from "./song";
 
 const SongList = () => {
     const [songs] = useState([
-        { song: 'biisi1', artist: 'esittäjä 1', year: '2001' },
-        { song: 'biisi2', artist: 'esittäjä 2', year: '2002' },
-        { song: 'biisi3', artist: 'esittäjä 3', year: '2003' }
+        { song: 'Battery', artist: 'Metallica', year: '1986' },
+        { song: 'Blackened', artist: 'Metallica', year: '1989' },
+        { song: 'Koolaid', artist: 'Accept', year: '2017' },
+        { song: 'Battery', artist: 'Metallica', year: '1986' },
+        { song: 'Blackened', artist: 'Metallica', year: '1989' },
+        { song: 'Koolaid', artist: 'Accept', year: '2017' },
+        { song: 'Battery', artist: 'Metallica', year: '1986' },
+        { song: 'Blackened', artist: 'Metallica', year: '1989' },
+        { song: 'Koolaid', artist: 'Accept', year: '2017' }
        ]);       
 
     return(
-        <div>
+        <div className="p-2 text-center">
             {
                 songs.map(({song, artist, year}, index) => {
                     return (
