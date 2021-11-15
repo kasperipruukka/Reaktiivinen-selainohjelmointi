@@ -1,7 +1,7 @@
 const TopSection = () => {
  return(
     <div>
-        <p>0 / 0 songs</p>
+        <p className="text-xl text-blue-800">0 / 0 songs</p>
     </div>
  );
 };

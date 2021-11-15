@@ -1,6 +1,6 @@
 const Song = ({song, artist, year}) => {
     return (
-        <div className="p-2 border-gray-200 border-b-2 text-lg w-72 mb-2 shadow-inner">
+        <div className="pt-5 pb-5 pr-24 pl-24 border-gray-200 border-b-2 text-xl mb-2 shadow-inner bg-gray-50">
             <div>
                 <h3 className="text-xl text-blue-800 mb-2 font-semibold">{song}</h3>
                 <p>{artist}, {year}</p>

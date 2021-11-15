@@ -1,21 +1,16 @@
-import { useState } from "react";
 import Song from "./song";
 
-const SongList = () => {
-    const [songs] = useState([
-        { song: 'Battery', artist: 'Metallica', year: '1986' },
-        { song: 'Blackened', artist: 'Metallica', year: '1989' },
-        { song: 'Koolaid', artist: 'Accept', year: '2017' },
-        { song: 'Battery', artist: 'Metallica', year: '1986' },
-        { song: 'Blackened', artist: 'Metallica', year: '1989' },
-        { song: 'Koolaid', artist: 'Accept', year: '2017' },
-        { song: 'Battery', artist: 'Metallica', year: '1986' },
-        { song: 'Blackened', artist: 'Metallica', year: '1989' },
-        { song: 'Koolaid', artist: 'Accept', year: '2017' }
-       ]);       
+const SongList = ({songs}) => {
+    if(songs.length < 1) {
+        return (
+            <div className="mt-5 text-center">
+                <p className="m-0 self-center text-lg text-gray-500">No songs found...</p>
+            </div>
+        );
+    }
 
     return(
-        <div className="p-2 text-center">
+        <div className="text-center">
             {
                 songs.map(({song, artist, year}, index) => {
                     return (
